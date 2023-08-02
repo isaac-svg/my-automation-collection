@@ -3,5 +3,5 @@
 ## I intend on writing bash scripts for automation my tasks so i dedicate this repo for that ##
 
 # Projetcs
--Downloads folder arranger
--Git push automation
+1.Downloads folder arranger 
+2.Git push automation

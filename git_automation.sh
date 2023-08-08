@@ -1,15 +1,25 @@
 #!/bin/bash
 
 push() {
+
+  # Check if a commit message is provided as an argument
+  if [ -z "$1" ]; then
+  echo "Error: Please provide at least a commit message. "
+  echo "Usage: $(basename $0) 'my commit message' 'repository name' "
+  exit 1
+  fi
+  echo "$*"
+  echo "$#"
   git add .
   git commit -m "$1"
-  git push
+ 
+  if [ -n "$2" ]; then
+  	
+  	git push "$2"
+  else
+  	git push
+  fi
 }
 
-# Check if a commit message is provided as an argument
-if [ -z "$1" ]; then
-  echo "Error: Please provide a commit message as an argument."
-  exit 1
-fi
 
-push "$1"
+push "$1" "$2"

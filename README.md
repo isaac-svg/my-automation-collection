@@ -1,6 +1,6 @@
 # BASH SCRIPTS REPO #
 
-## I intend on writing bash scripts for automation my tasks so i dedicate this repo for that ##
+##  Scripts I have written for automating every work I do
 
 # Projects
   - Downloads folder arranger 

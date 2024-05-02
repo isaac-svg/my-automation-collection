@@ -4,7 +4,7 @@ import xlsx  from 'xlsx';
 
 function convertXlsxToCsv(xlsxFilePath) {
     const workbook = xlsx.readFile(xlsxFilePath);
-    const sheetName = workbook.SheetNames[0]; // Assuming you want to convert the first sheet
+    const sheetName = workbook.SheetNames[0]; //
     const csvData = xlsx.utils.sheet_to_csv(workbook.Sheets[sheetName]);
 
     return csvData;

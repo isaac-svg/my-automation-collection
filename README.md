@@ -8,3 +8,4 @@
   - Converting xlsx to csv
   - Splitting a csv file
   - Data scraping
+  - Replace all empty cells in a csv file with 0

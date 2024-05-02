@@ -33,7 +33,7 @@ function processMonthFolder(monthFolder) {
     excelFiles.forEach((file) => {
       const filePath = path.join(monthPath, file);
       const workbook = XLSX.readFile(filePath);
-      const sheetName = workbook.SheetNames[0]; // Assuming only one sheet per workbook
+      const sheetName = workbook.SheetNames[0]; 
       const worksheet = workbook.Sheets[sheetName];
       let data = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
 
